@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+		<config>
+			<api>
+				<class>xx.xx.xx.xx.ApiDemoImpl</class>
+				<url>/query</url>
+			</api>
+		</config>
+</configs>

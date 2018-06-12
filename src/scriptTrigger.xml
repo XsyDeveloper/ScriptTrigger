@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+		<config>
+			<trigger>
+				<!-- From :  https://api.xiaoshouyi.com/data/v1/picks/dimension/belongs-->
+				<object>account</object>
+				<!-- Options: add / update / delete-->
+				<operate>add</operate>
+				<!-- Options: before / after-->
+				<position>after</position>
+				<order>1</order>
+				<!-- Caution: match case / spell / full path-->
+				<class>other.abc.zxc.trigger.TriggerDemoImpl</class>
+			</trigger>
+			<wfmTrigger>
+				<object>account</object>
+				<class>other.abc.zxc.wfmtrigger.WfmTriggerDemoImpl</class>
+			</wfmTrigger>
+			<schedule>
+				<class>other.abc.zxc.schedule.ScheduleDemoImpl</class>
+			</schedule>
+			<DSUserTrigger>
+				<object>account</object>
+				<apikey>youCanNamingApiKeyLikeThis</apikey>
+				<class>other.abc.zxc.dsusertrigger.DsUserTriggerDemoImpl</class>
+			</DSUserTrigger>
+		</config>
+</configs>
