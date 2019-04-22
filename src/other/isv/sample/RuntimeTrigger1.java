@@ -52,6 +52,8 @@ public class RuntimeTrigger1 implements Trigger{
 				
 				//如果不支持部分成功，直接终止trigger
 				if(!arg0.getPartialSuccess()){
+					triggerResponse.setSuccess(false);
+					triggerResponse.setMsg(e.getMessage());
 					return triggerResponse;
 				}
 			}

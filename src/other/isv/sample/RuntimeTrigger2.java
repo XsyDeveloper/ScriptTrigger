@@ -76,6 +76,8 @@ public class RuntimeTrigger2 implements Trigger{
 				log.error(e.getMessage(), e);
 				triggerResponse.addDataResult(new DataResult(false, e.getMessage(), xObject));
 				if(!arg0.getPartialSuccess()){
+					triggerResponse.setSuccess(false);
+					triggerResponse.setMsg(e.getMessage());
 					return triggerResponse;
 				}
 			}
